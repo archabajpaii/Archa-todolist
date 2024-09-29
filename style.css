@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background:#121212 ;
+    --text:#ffffff;
+    --primaryColor:#324767;
+    --secondaryColor:#bb86fc;
+    --buttonColor:#a955c2;
+
+
+}
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     
+    margin: 120px auto 0 auto;
+    
+    max-width: 600px;
+}
+.main-header-container{
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--secondaryColor);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+
+}
+.heading{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+form{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+input{
+    flex: 1;
+    padding: 15px;
+    background: var(--primaryColor);
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    color: white;
+}
+button{
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--buttonColor);
+    font-size: 30px;
+    
+    
+}
+#task-list {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+  
+    margin-top: 30px;
+    width: 100%;
+    max-width: 100%;
+    list-style: none;
+
+   
+     
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    color: white;
+    border: 2px solid var(--text);
+    font-size: 16px;
+    /* max-width: 400px; Limit the width of the task items */
+    /* width: 100%; Set the width of task item */
+    box-sizing: border-box;
+   
+}  
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task input{
+    width: 20px;
+    height: 20px;
+}
+
+.icons{
+    display: flex;
+    gap: 5px;
+}
+.icons img {
+    width: 20px; /* Set the size of the icons */
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+
+}
+.task input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+input[type="checkbox"]:checked+p{
+    text-decoration: line-through;
+}
